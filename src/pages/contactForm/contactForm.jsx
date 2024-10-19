@@ -115,7 +115,7 @@ const ContactForm = () => {
     setErrors({
       ...errors,
       [name]: error,
-      ['enquiry']: errorEnquiry,
+      enquiry: errorEnquiry,
     });
   };
 

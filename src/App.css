@@ -1,3 +1,5 @@
+/* ----------  ------------ */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,7 +19,100 @@ p {
   /* 16px */
 }
 
-.App {
+h2 {
+  color: white;
+}
+
+:root {
+  --main-green-color: #03A142;
+  --secondary-green-color: #8DA299;
+}
+
+body {
   background: rgb(2, 0, 36);
-  background: linear-gradient(45deg, rgba(2, 0, 36, 1) 48%,  rgb(3, 101, 66) 100%);
+  background: linear-gradient(50deg, rgba(2, 0, 36, 1) 15%, var(--main-green-color) 159%);
+  color: #ffffff;
+  min-height: 100vh;
+  font-family: "Maven Pro", sans-serif;
+}
+
+.flexColumnCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.section {
+  margin-top: 80px;
+}
+
+.maxWidth {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.titleH2 {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.text24 {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.text24M {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.text16 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.text21 {
+  font-weight: 500;
+  font-size: 21px;
+}
+
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .text24 {
+    line-height: 30px;
+  }
+
+  body {
+    padding: 0 20px;
+  }
+
+
+  .title,
+  .titleH2,
+  .text24 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 1300px) {
+
+  body {
+    padding: 0 20px;
+  }
+
 }

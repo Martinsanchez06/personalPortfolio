@@ -1,38 +1,233 @@
-/* ---------- LANDING STYLES ---------- */
+/* ---------- HOME MAIN SECTION  ------------ */
 
-.landingSectionMaincontainer {
-    display: flex;
-    padding: 70px 0 40px;
+.mainSectionHome {
+    margin: auto;
+    margin-top: 30px;
     flex-direction: column;
-    gap: 15px;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-}
-
-.landingSectionMaincontainer .landingSectionMyInfoContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    gap: 30px;
 }
 
-.landingSectionMaincontainer .landingMyImg {
-    height: 150px;
-    width: 150px;
-    margin-bottom: 70px;
+.mainSectionHome .textContainer {
+    gap: 10px;
 }
 
-.landingSectionMaincontainer .landingMainText {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 32px;
-    text-align: center;
+.mainSectionHome .textContainer .title:nth-of-type(2) {
+    color: var(--main-green-color);
 }
 
-.landingSectionMaincontainer .landingSecondText {
+/* ---------- HOME EXPERIENCE SECTION  ------------ */
+
+.experienceSectionContainter {
+    gap: 35px;
+    align-items: flex-start;
+}
+
+.experienceSectionContainter .text24M {
+    display: flex;
+    gap: 10px;
+}
+
+.experienceSectionContainter .experienceContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.experienceSectionContainter .experienceContainer .bulletDecorationContainer {
+    position: relative;
+    z-index: 100;
+}
+
+
+.experienceSectionContainter .experienceContainer:last-of-type .bulletDecorationContainer .bulletLine {
+    height: 100%;
+    width: 1px;
+    background-color: var(--secondary-green-color);
+}
+
+.experienceSectionContainter .experienceContainer:not(:last-of-type) .bulletDecorationContainer .bulletLine {
+    width: 1px;
+    height: calc(100% + 60px);
+    background-color: var(--secondary-green-color);
+}
+
+.experienceSectionContainter .experienceContainer .bulletDecorationContainer .bulletPoint {
+    position: absolute;
+    width: 10px;
+    border-radius: 100px;
+    height: 10px;
+    top: 3px;
+    left: -5px;
+    background-color: var(--main-green-color);
+}
+
+.experiencesMainContainter .experienceContainer:not(:last-of-type) {
+    margin-bottom: 60px;
+}
+
+.experiencesMainContainter .experienceContainer .experienceData .experienceDate {
+    font-size: 12px;
+    color: var(--secondary-green-color);
+}
+
+.experiencesMainContainter .experienceContainer .experienceData .experienceTitle {
+    font-size: 18px;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
+    color: var(--main-green-color);
+}
+
+/* 
+.experiencesMainContainter .experienceContainer .experienceData .experienceText{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+} */
+
+/* ---------- HOME PROJECTS SECTION ------------ */
+
+.projectsSectionContainer {
+    align-items: start;
+    gap: 35px;
+}
+
+.projectsSectionContainer .text24M {
+    display: flex;
+    gap: 10px;
+}
+
+.projectsSectionContainer .projectContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.projectsSectionContainer .projectContainer.second {
+    flex-direction: row-reverse;
+}
+
+.projectsSectionContainer .projectContainer .infoContainer {
+    gap: 20px;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 740px;
+}
+
+.projectsSectionContainer .projectContainer .img {
+    width: 100%;
+    height: 100%;
+    max-width: 520px;
+    max-height: 270px;
+    border-radius: 16px;
+    background-color: #fff;
+}
+
+.projectsSectionContainer .projectContainer .title {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--main-green-color);
+}
+
+.projectsSectionContainer .projectContainer .technologies {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.projectsSectionContainer .projectContainer .technologies div {
+    width: 110px;
+    height: 30px;
+    border-radius: 35px;
+}
+
+.projectsSectionContainer .projectContainer .technologies div p {
+    font-size: 16px;
+}
+
+/* ---------- HOME TECH SKILLS SECTION  ------------ */
+
+.techStackSectionContainer {
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.techStackSectionContainer .text24M {
+    display: flex;
+    gap: 10px;
+}
+
+.techStackSectionContainer .technologiesSkills {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* ---------- HOME LAST CONTACT SECTION  ------------ */
+
+.lastContactSectionContainer {
+    gap: 20px;
+}
+
+/* ---------- HOME BUTTONS ------------ */
+
+.mainSectionHomeButtonsContainer {
+    gap: 25px;
+}
+
+.button.downloadCV {
+    border: 1px solid var(--main-green-color);
+    background-color: transparent;
+    gap: 10px;
+}
+
+.linkButton {
+    background-color: #010409;
+    padding: 5px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+}
+
+/* ---------- TYPEWRITER ANIMATION  ------------ */
+
+.typewrite>.wrap {
+    border-right: 0.08em solid var(--main-green-color);
+    overflow: hidden;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: var(--main-green-color);
+    }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+    .techStackSectionContainer .technologiesSkills {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .mainSectionHomeButtonsContainer,
+    .projectsSectionContainer .projectContainer {
+        flex-wrap: wrap;
+    }
+
+    .projectsSectionContainer .projectContainer {
+        justify-content: center;
+    }
+
+    .projectsSectionContainer .projectContainer .img {
+        max-width: 740px;
+        max-height: 100%;
+    }
 }

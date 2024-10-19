@@ -1,6 +1,5 @@
 // Typewriter.js
 import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
 
 const Typewriter = ({ text, period, className }) => {
   const [displayedText, setDisplayedText] = useState('');

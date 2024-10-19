@@ -72,20 +72,31 @@ function Header() {
                 <div className={`menuMobile flex justify-center items-center ${showMobileMenu && "active"}`}>
                     <div className='menu flex gap-[25px] flex-col'>
                         <div className="linksContainer flex-col">
-                            <Link smooth to="/#home" className="navLink">
+                            <Link
+                                smooth
+                                to="/#home"
+                                className="navLink"
+                                onClick={() => setShowMobileMenu(false)}
+                            >
                                 {t('HEADER_HOME')}
 
                             </Link>
                             <div className='line-divider-menu-mobile'></div>
-                            <Link smooth to="/#experience" className="navLink" scroll={scrollWithOffset}>
+                            <Link
+                                smooth to="/#experience"
+                                className="navLink"
+                                scroll={scrollWithOffset}
+                                onClick={() => setShowMobileMenu(false)}
+                            >
                                 {t('HEADER_EXPERIENCE')}
                             </Link>
                             <div className='line-divider-menu-mobile'></div>
                             <Link
                                 smooth
-                                to="projects"
+                                to="/#projects"
                                 className="navLink"
                                 scroll={scrollWithOffset}
+                                onClick={() => setShowMobileMenu(false)}
                             >
                                 {t('HEADER_PROJECTS')}
                             </Link>

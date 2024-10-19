@@ -165,7 +165,8 @@
 }
 
 @media (max-width: 500px) {
-    .formMainContainer .contactFormOptions .option {
+    .formMainContainer .contactFormOptions .option,
+    .formMainContainer .contactFormOptions .option.selected {
         width: 100%;
     }
 

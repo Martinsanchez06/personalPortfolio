@@ -127,7 +127,7 @@
         width: 90vw;
         z-index: 200;
         margin: auto;
-        background-color: rgb(1, 4, 36);
+        background-color: rgba(2, 0, 36, 1);
     }
 
     .menuMobile .menu .line-divider-menu-mobile {

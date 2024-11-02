@@ -46,7 +46,7 @@ function Header() {
                     <p>•</p>
                     <Link
                         smooth
-                        to="projects"
+                        to="/#projects"
                         className="navLink"
                         scroll={scrollWithOffset}
                     >

@@ -86,11 +86,23 @@ function Home() {
     { src: '/img/home/JSIcon.svg', alt: 'JavaScript' },
     { src: '/img/home/TailwindIcon.svg', alt: 'Tailwind CSS' },
     { src: '/img/home/ReactIcon.svg', alt: 'React' },
-    { src: '/img/home/NodeJSIcon.svg', alt: 'Node.js' },
+    { src: '/img/home/PythonIcon.svg', alt: 'Python' },
+    { src: '/img/home/GitIcon.svg', alt: 'Git' },
     { src: '/img/home/SQLIcon.svg', alt: 'SQL' },
+    { src: '/img/home/NodeJSIcon.svg', alt: 'Node.js' },
   ];
 
   const homeRoleText = t('HOME_ROLE');
+
+  const chunkArray = (arr, size) => {
+    const result = [];
+    for (let i = 0; i < arr.length; i += size) {
+      result.push(arr.slice(i, i + size));
+    }
+    return result;
+  };
+
+  const techGroups = chunkArray(techSkills, 3);
 
   return (
     <div className="App" id="home">
@@ -171,11 +183,15 @@ function Home() {
           <img src="/img/home/BrainIcon.svg" alt="Habilidades Técnicas" />
           {t('TECHNICAL_SKILLS_TITLE')}
         </h1>
-        <div className="technologiesSkills flexCenter">
-          {techSkills.map((tech, index) => (
-            <div className="techSKill" key={index}>
-              <img src={tech.src} alt={tech.alt} />
-            </div>
+        <div className="technologiesSkills flex w-full gap-[50px]">
+          {techGroups.map((group, groupIndex) => (
+            <>
+              {group.map((tech, index) => (
+                <div className="techSkill flex justify-center items-center rounded-2xl" key={index}>
+                  <img src={tech.src} alt={tech.alt} />
+                </div>
+              ))}
+            </>
           ))}
         </div>
       </section>

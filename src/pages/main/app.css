@@ -78,13 +78,6 @@
     color: var(--main-green-color);
 }
 
-/* 
-.experiencesMainContainter .experienceContainer .experienceData .experienceText{
-    font-size: 16px;
-    font-weight: 400;
-    color: #ffffff;
-} */
-
 /* ---------- HOME PROJECTS SECTION ------------ */
 
 .projectsSectionContainer {
@@ -163,6 +156,17 @@
     justify-content: space-between;
 }
 
+.techStackSectionContainer .techSkill {
+    background-color: rgba(194, 194, 194, 0.1);
+    width: 370px;
+    height: 150px;
+}
+
+.techStackSectionContainer .techSkill img{
+    width: 90px;
+    height: 100px;
+}
+
 /* ---------- HOME LAST CONTACT SECTION  ------------ */
 
 .lastContactSectionContainer {
@@ -210,13 +214,6 @@
 }
 
 @media (min-width: 300px) and (max-width: 900px) {
-    .techStackSectionContainer .technologiesSkills {
-        width: 100%;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-    }
-
     .mainSectionHomeButtonsContainer,
     .projectsSectionContainer .projectContainer {
         flex-wrap: wrap;
@@ -229,5 +226,13 @@
     .projectsSectionContainer .projectContainer .img {
         max-width: 740px;
         max-height: 100%;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 1250px) {
+    .techStackSectionContainer .technologiesSkills {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }

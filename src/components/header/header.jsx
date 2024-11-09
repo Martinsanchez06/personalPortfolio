@@ -29,7 +29,7 @@ function Header() {
                     <RouterLink to={'https://github.com/Martinsanchez06'} className='socialMediaButton' target='_Blank'>
                         <img src="/img/header/gitHubIcon.svg" alt="" />
                     </RouterLink>
-                    <RouterLink to={'https://www.linkedin.com/in/mart%C3%ADn-s%C3%A1nchez-77077b24a/'} className='socialMediaButton' target='_Blank'>
+                    <RouterLink to={'https://www.linkedin.com/in/martin-sanchez-cardenas/'} className='socialMediaButton' target='_Blank'>
                         <img src="/img/header/linkedinIcon.svg" alt="" />
                     </RouterLink>
                 </div>
@@ -106,7 +106,7 @@ function Header() {
                             <RouterLink to={'https://github.com/Martinsanchez06'} className='socialMediaButton' target='_Blank'>
                                 <img src="/img/header/gitHubIcon.svg" alt="" />
                             </RouterLink>
-                            <RouterLink to={'https://www.linkedin.com/in/mart%C3%ADn-s%C3%A1nchez-77077b24a/'} className='socialMediaButton' target='_Blank'>
+                            <RouterLink to={'https://www.linkedin.com/in/martin-sanchez-cardenas/'} className='socialMediaButton' target='_Blank'>
                                 <img src="/img/header/linkedinIcon.svg" alt="" />
                             </RouterLink>
                         </div>

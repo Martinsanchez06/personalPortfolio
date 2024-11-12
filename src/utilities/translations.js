@@ -32,8 +32,12 @@ const en = {
 
     // ---------- PROYECTS SECTION ----------
     PROJECTS_TITLE: 'Projects',
+    PROJECTS_IN_PROGRESS: "In progress!",
     PROJECT_TITLE_1: 'Infinite Image Gallery',
     PROJECT_DESCRIPTION_1: 'With this project, I have practiced and improved my skills in React, especially in integrating APIs like Unsplash to create an image gallery with infinite scroll. I learned to manage states and effects using hooks and optimized performance by implementing lazy loading and component memoization. Additionally, I enhanced my responsive design abilities using Tailwind CSS to craft an adaptable and attractive interface.',
+    PROJECT_TITLE_2: 'Product Catalog',
+PROJECT_DESCRIPTION_2: 'This online product catalog employs a layered architecture in FastAPI, implementing CRUD operations, OAuth2 authentication with Google, and JWT for secure sessions. On the frontend, I used React with TypeScript and Context + Reducers, along with the Container-Presenter pattern for clear and efficient state management. Real-time filtering enhances user experience in the catalog, and the backend database structure and SQL queries are optimized for performance and efficient product relationship management.',
+
 
     // ---------- TECH SKILLS SECTION ----------
     TECHNICAL_SKILLS_TITLE: 'Technical Skills',
@@ -98,8 +102,13 @@ const es = {
 
     // ---------- PROYECTS SECTION ----------
     PROJECTS_TITLE: 'Proyectos',
+    PROJECTS_IN_PROGRESS: "¡En progreso!",
     PROJECT_TITLE_1: 'Galería de Imágenes Infinita',
     PROJECT_DESCRIPTION_1: 'Con este proyecto, he practicado y mejorado mis habilidades en React, especialmente integrando APIs como Unsplash para crear una galería de imágenes con desplazamiento infinito. Aprendí a gestionar estados y efectos usando hooks y optimicé el rendimiento implementando carga diferida y memorización de componentes. Además, mejoré mis habilidades de diseño responsivo utilizando Tailwind CSS para crear una interfaz adaptable y atractiva.',
+    PROJECT_TITLE_2: 'Catálogo de Productos',
+PROJECT_DESCRIPTION_2: 'Este catálogo de productos online utiliza una arquitectura en capas en FastAPI, implementando operaciones CRUD, autenticación OAuth2 con Google y generación de JWT para sesiones seguras. En el frontend, empleé React con TypeScript y Context + Reducers, junto al patrón Container-Presenter para una gestión de estado clara y eficiente. El filtrado en tiempo real optimiza la experiencia del usuario en el catálogo, y en el backend, la estructura de la base de datos y las consultas SQL están diseñadas para un rendimiento óptimo y una gestión eficiente de relaciones entre productos.',
+
+
     // ---------- TECH SKILLS SECTION ----------
     TECHNICAL_SKILLS_TITLE: 'Habilidades Técnicas',
 

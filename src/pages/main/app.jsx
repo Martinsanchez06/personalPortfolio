@@ -23,24 +23,32 @@ function ExperienceItem({ date, title, description }) {
   );
 }
 
-function ProjectItem({ title, description, technologies, imgClass, img, gitHubLink, projectLink }) {
+function ProjectItem({ title, description, technologies, imgClass, img, gitHubLink, projectLink, inProgress }) {
+  const { t } = useTranslation();
+
   return (
-    <div className={`projectContainer ${imgClass}`}>
-      <img src={`/img/home/${img}`} alt="" className="img" />
+    <div className={`projectContainer ${imgClass} ${inProgress ? "inProgress" : ""}`}>
+      <div className="img imgContainer">
+        <img src={`/img/projects/${img}`} alt="" className="img" />
+        <div className={`hoverIamge ${inProgress ? "active" : "false"}`}></div>
+      </div>
       <div className="infoContainer flexColumnCenter">
         <h2 className="title">{title}</h2>
         <p className="text16">{description}</p>
+        {inProgress && (
+          <p className="text16 progressText">{t("PROJECTS_IN_PROGRESS")}</p>
+        )}
         <div className="links flex justify-center items-center gap-[10px]">
-          <RouterLink to={gitHubLink} className='linkButton flex justify-center items-center' target='_Blank'>
+          <RouterLink to={inProgress ? "/" : gitHubLink} className='linkButton flex justify-center items-center' target={inProgress ? "" : '_Blank'}>
             <img src="/img/header/gitHubIcon.svg" alt="" />
           </RouterLink>
-          <RouterLink to={projectLink} className='linkButton flex justify-center items-center' target='_Blank'>
+          <RouterLink to={inProgress ? "/" : projectLink} className='linkButton flex justify-center items-center' target={inProgress ? "" : '_Blank'}>
             <img src="/img/home/linkIcon.svg" alt="" />
           </RouterLink>
         </div>
         <div className="technologies">
           {technologies.map((tech, index) => (
-            <div key={index} className={`flex justify-center items-center ${tech.className}`}>
+            <div key={index} className={`flex justify-center items-center ${tech.className} ${inProgress ? "bg-[#6464649c]" : ""}`}>
               <p>{tech.text}</p>
             </div>
           ))}
@@ -76,15 +84,31 @@ function Home() {
       ],
       img: 'infinite_galery.jpeg',
       gitHubLink: 'https://github.com/Martinsanchez06/Galery_infinite',
-      projectLink: 'https://infinite-gallery-ms.netlify.app'
+      projectLink: 'https://infinite-gallery-ms.netlify.app',
+      inProgress: false
     },
+    {
+      title: t('PROJECT_TITLE_2'),
+      description: t('PROJECT_DESCRIPTION_2'),
+      technologies: [
+        { text: 'Tailwind', className: 'bg-[#44A8B3]' },
+        { text: 'Typescript', className: 'bg-[#44A8B3]' },
+        { text: 'Python', className: 'bg-[#44A8B3]' },
+        { text: 'SQL', className: 'bg-[#44A8B3]' },
+        { text: 'React', className: 'bg-[#53C1DE]' },
+      ],
+      img: 'catalog_template.png',
+      gitHubLink: 'https://github.com/Martinsanchez06/Galery_infinite',
+      projectLink: 'https://infinite-gallery-ms.netlify.app',
+      inProgress: true
+    }
   ];
 
   const techSkills = [
     { src: '/img/home/HTMLIcon.svg', alt: 'HTML' },
     { src: '/img/home/CSSIcon.svg', alt: 'CSS' },
     { src: '/img/home/JSIcon.svg', alt: 'JavaScript' },
-    { src: '/img/home/TailwindIcon.svg', alt: 'Tailwind CSS' },
+    { src: '/img/home/TypeScriptIcon.svg', alt: 'Typescript' },
     { src: '/img/home/ReactIcon.svg', alt: 'React' },
     { src: '/img/home/PythonIcon.svg', alt: 'Python' },
     { src: '/img/home/GitIcon.svg', alt: 'Git' },
@@ -171,6 +195,7 @@ function Home() {
             gitHubLink={project.gitHubLink}
             projectLink={project.projectLink}
             imgClass={index % 2 === 1 ? 'second' : ''}
+            inProgress={project.inProgress}
           />
         ))}
       </section>

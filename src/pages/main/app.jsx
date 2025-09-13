@@ -63,14 +63,19 @@ function Home() {
 
   const experiences = [
     {
-      date: t('EXPERIENCE_DATE_1'),
-      title: t('EXPERIENCE_TITLE_1'),
-      description: t('EXPERIENCE_DESCRIPTION_1'),
+      date: t('EXPERIENCE_DATE_3'),
+      title: t('EXPERIENCE_TITLE_3'),
+      description: t('EXPERIENCE_DESCRIPTION_3'),
     },
     {
       date: t('EXPERIENCE_DATE_2'),
       title: t('EXPERIENCE_TITLE_2'),
       description: t('EXPERIENCE_DESCRIPTION_2'),
+    },
+    {
+      date: t('EXPERIENCE_DATE_1'),
+      title: t('EXPERIENCE_TITLE_1'),
+      description: t('EXPERIENCE_DESCRIPTION_1'),
     },
   ];
 
@@ -109,11 +114,14 @@ function Home() {
     { src: '/img/home/CSSIcon.svg', alt: 'CSS' },
     { src: '/img/home/JSIcon.svg', alt: 'JavaScript' },
     { src: '/img/home/TypeScriptIcon.svg', alt: 'Typescript' },
-    { src: '/img/home/ReactIcon.svg', alt: 'React' },
     { src: '/img/home/PythonIcon.svg', alt: 'Python' },
+    { src: '/img/home/ReactIcon.svg', alt: 'React' },
     { src: '/img/home/GitIcon.svg', alt: 'Git' },
     { src: '/img/home/SQLIcon.svg', alt: 'SQL' },
     { src: '/img/home/NodeJSIcon.svg', alt: 'Node.js' },
+    { src: '/img/home/postgressIcon.svg', alt: 'PostgreSQL' },
+    { src: '/img/home/redisIcon.svg', alt: 'Redis' },
+    { src: '/img/home/nextJSIcon.svg', alt: 'NestJS' },
   ];
 
   const homeRoleText = t('HOME_ROLE');
@@ -139,11 +147,7 @@ function Home() {
           <h1 className="title">
             <Typewriter text={homeRoleText} period={2000} className="typewrite" />
           </h1>
-          <h2 className="titleH2">{t('HOME_SPECIALIZATION')}</h2>
         </div>
-        <p className="secondaryText text24">
-          {t('HOME_FRONTEND_DEVELOPER')}
-        </p>
         <div className="mainSectionHomeButtonsContainer flexCenter">
           <Button text={t('HOME_CONTACT_ME')} link="/contact" blank={false} />
           <a

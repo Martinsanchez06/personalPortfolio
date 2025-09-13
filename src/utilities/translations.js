@@ -16,19 +16,20 @@ const en = {
     // ---------- MAIN SECTION ----------
     HOME_GREETING: "Hello! I'm Martin",
     HOME_ROLE: '<Full Stack Developer/>',
-    HOME_SPECIALIZATION: 'Specialized in React',
-    HOME_FRONTEND_DEVELOPER: 'Front End Developer | Full Stack Developer',
     HOME_CONTACT_ME: 'Contact Me',
     HOME_DOWNLOAD_CV: 'Download CV',
 
     // ---------- EXPERIENCE SECTION ----------
     EXPERIENCE_TITLE: 'Experience',
-    EXPERIENCE_DATE_1: 'January 2023 - January 2024',
+    EXPERIENCE_DATE_1: 'January 2022 - January 2024',
     EXPERIENCE_TITLE_1: 'Full Stack Developer at AT&T | 5IG Solutions',
     EXPERIENCE_DESCRIPTION_1: `As a Full Stack Developer, I contributed to building the company's flagship website using React.js, Node.js, and SQL, now serving over 150,000 daily users. I optimized databases and backend processes, reducing server response times with advanced SQL techniques. I mentored team members on front-end code optimization, enhancing overall code quality. Under expert mentorship, I mastered database management and SQL optimization, elevating system performance and reliability.`,
     EXPERIENCE_DATE_2: 'January 2024 - October 2024',
     EXPERIENCE_TITLE_2: 'Full Stack Developer | 5IG Solutions',
     EXPERIENCE_DESCRIPTION_2: `In my previous role, I developed the company's main homepage from coding to deployment using React, ensuring a seamless user experience. By integrating code with Power Automate and I automated processes. Utilizing Dataverse as the primary storage, I managed and integrated data. I implemented advanced form logic with React components and hooks like useRef, and created custom React hooks to enhance performance and maintainability across the codebase. Additionally, I developed an AI-driven algorithm in Python for product recommendations capable of processing multiple data sources, which elevated user engagement.`,
+    EXPERIENCE_DATE_3: 'December 2024 - Present',
+    EXPERIENCE_TITLE_3: 'Full Stack Developer | Shokworks, Inc.',
+    EXPERIENCE_DESCRIPTION_3: `As a Full Stack Developer, I refactored backend systems using NestJS, TypeORM, and PostgreSQL, achieving greater speed and stability in large-scale data processing. I developed data transformation systems and performance metrics for strategic decisions. Integrated robust backends with React, Next.js, and TypeScript, optimizing security and user experience. Implemented AI solutions with OpenAI and campaign automation in Meta/Google Ads, reducing manual processes by 30%. Created randomization systems and recommendation algorithms for social apps, improving user interaction and content discovery. Built microservices architectures on AWS, supporting 30% more data volume with reliable continuous flow.`,
 
     // ---------- PROYECTS SECTION ----------
     PROJECTS_TITLE: 'Projects',
@@ -86,19 +87,20 @@ const es = {
     // ---------- MAIN SECTION ----------
     HOME_GREETING: '¡Hola! Soy Martin',
     HOME_ROLE: '<Desarrollador Full Stack/>',
-    HOME_SPECIALIZATION: 'Especializado en React',
-    HOME_FRONTEND_DEVELOPER: 'Desarrollador Front End | Desarrollador Full Stack',
     HOME_CONTACT_ME: 'Contáctame',
     HOME_DOWNLOAD_CV: 'Descargar CV',
 
     // ---------- EXPERIENCE SECTION ----------
     EXPERIENCE_TITLE: 'Experiencia',
-    EXPERIENCE_DATE_1: 'Enero 2023 - Enero 2024',
+    EXPERIENCE_DATE_1: 'Enero 2022 - Enero 2024',
     EXPERIENCE_TITLE_1: 'Desarrollador Full Stack en AT&T | 5IG Solutions',
     EXPERIENCE_DESCRIPTION_1: 'Como desarrollador full stack, contribuí a la creación del sitio web insignia de la empresa utilizando React.js, Node.js y SQL, que ahora atiende a más de 150 000 usuarios diarios. Optimicé las bases de datos y los procesos backend, reduciendo los tiempos de respuesta del servidor con técnicas SQL avanzadas. Orienté a los miembros del equipo en la optimización del código frontend, mejorando la calidad general del código. Bajo la tutela de expertos, dominé la gestión de bases de datos y la optimización SQL, lo que elevó el rendimiento y la confiabilidad del sistema.',
     EXPERIENCE_DATE_2: 'Enero 2024 - Octubre 2024',
     EXPERIENCE_TITLE_2: 'Desarrollador Full Stack | 5IG Solutions',
     EXPERIENCE_DESCRIPTION_2: 'En mi puesto anterior, desarrollé la página de inicio principal de la empresa desde la codificación hasta la implementación utilizando React, lo que garantizó una experiencia de usuario perfecta. Al integrar el código con Power Automate, automaticé los procesos. Utilizando Dataverse como almacenamiento principal, administré e integré los datos. Implementé una lógica de formulario avanzada con componentes y ganchos de React como useRef, y creé ganchos de React personalizados para mejorar el rendimiento y la capacidad de mantenimiento en toda la base de código. Además, desarrollé un algoritmo impulsado por IA en Python para recomendaciones de productos capaz de procesar múltiples fuentes de datos, lo que aumentó la participación del usuario.',
+    EXPERIENCE_DATE_3: 'Diciembre 2024 - Presente',
+    EXPERIENCE_TITLE_3: 'Desarrollador Full Stack | Shokworks, Inc.',
+    EXPERIENCE_DESCRIPTION_3: 'Como desarrollador full stack, refactoricé sistemas backend utilizando NestJS, TypeORM y PostgreSQL, logrando mayor velocidad y estabilidad en el procesamiento de datos a gran escala. Desarrollé sistemas de transformación de datos y métricas de rendimiento para decisiones estratégicas. Integré backends robustos con React, Next.js y TypeScript, optimizando seguridad y experiencia de usuario. Implementé soluciones de IA con OpenAI y automatización de campañas en Meta/Google Ads, reduciendo procesos manuales en un 30%. Creé sistemas de aleatorización y algoritmos de recomendación para aplicaciones sociales, mejorando la interacción del usuario y el descubrimiento de contenido. Construí arquitecturas de microservicios en AWS, soportando 30% más volumen de datos con flujo continuo confiable.',
 
     // ---------- PROYECTS SECTION ----------
     PROJECTS_TITLE: 'Proyectos',
